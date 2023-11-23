@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="fname">Firstname -</label>
+      <input type="text" name="firstname" id="fname" /><br><br>
+      <label for="mname">Middlename -</label>
+      <input type="text" name="middlename" id="mname" /><br><br>
+      <label for="lname">Lastname -</label>
+      <input type="text" name="lastname" id="lname" /><br><br>
+      <label for="course">Course :</label>
+      <select name="" id="course">
+        <option value="">Others</option>
+        <option value="">BSc</option>
+        <option value="">Msc</option>
+        <option value="">Mtech</option>
+        <option value="">BCom</option>
+        <option value="">Bba</option>
+        <option value="">Mba</option>
+        <option value="">Btech</option>
+      </select><br><br>
+      <label for="gender">Gender:</label>
+      <select name="" id="Gender">
+      <option value="">Select</option>
+      <option value="">Male</option>
+      <option value="">Female</option>
+      <option value="">Other</option>
+      </select><br><br>
+    <label for="dob">DOB</label>
+    <input type="Text"
+  
+    </form>
+  </body>
+</html>
