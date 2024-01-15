@@ -1,31 +1,20 @@
-let count = 0;
-const counterElement = document.getElementById('counter');
+const keyDisplay = document.getElementById('key-display');
+const keycodeDisplay = document.getElementById('keycode-display');
 
-function updateCounter() {
-    counterElement.textContent = count;
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+    const keycode = event.keyCode;
+
+    updateDisplays(key, keycode);
+});
+
+function updateDisplays(key, keycode) {
+    keyDisplay.textContent = `Key: ${key}`;
+    keycodeDisplay.textContent = `Keycode: ${keycode}`;
+
+    playKeyPressSound();
 }
 
-function increaseCount() {
-    count += 1;
-    updateCounter();
-    applyAnimation();
-}
-
-function decreaseCount() {
-    count -= 1;
-    updateCounter();
-    applyAnimation();
-}
-
-function resetCount() {
-    count = 0;
-    updateCounter();
-    applyAnimation();
-}
-
-function applyAnimation() {
-    counterElement.classList.add('animate');
-    setTimeout(() => {
-        counterElement.classList.remove('animate');
-    }, 500);
+function playKeyPressSound() {
+    
 }
