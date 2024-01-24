@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Keycode Keyboard</title>
+    <title>Digital Clock</title>
 </head>
 <body>
-    <div class="keyboard-container">
-        <div id="key-display">Press a key...</div>
-        <div id="keycode-display">Keycode: </div>
+    <div class="clock-container">
+        <div class="clock" id="digitalClock"></div>
+        <div class="creative-elements">
+            <div id="dynamicBackground"></div>
+            <div id="clockStyles">
+                <button onclick="toggleClockStyle()">Toggle Clock Style</button>
+            </div>
+            <div id="timeZoneConverter">
+                <select id="timeZoneSelector" onchange="changeTimeZone()">
+                    <option value="UTC">UTC</option>
+                    <option value="America/New_York">New York</option>
+                </select>
+            </div>
+           
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
