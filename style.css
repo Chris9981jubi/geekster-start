@@ -5,30 +5,24 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #722e2e;
 }
 
-.clock-container {
+.stopwatch-container {
     text-align: center;
+    justify-content: center;
 }
 
-.clock {
+.stopwatch {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.creative-elements {
+.controls {
     margin-top: 20px;
 }
 
-.dynamicBackground {
-
+.lap-times {
+    margin-top: 20px;
 }
 
-.clockStyles {
-
-}
-
-.timeZoneConverter {
-
-}

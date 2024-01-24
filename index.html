@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Stopwatch</title>
 </head>
 <body>
-    <div class="clock-container">
-        <div class="clock" id="digitalClock"></div>
-        <div class="creative-elements">
-            <div id="dynamicBackground"></div>
-            <div id="clockStyles">
-                <button onclick="toggleClockStyle()">Toggle Clock Style</button>
-            </div>
-            <div id="timeZoneConverter">
-                <select id="timeZoneSelector" onchange="changeTimeZone()">
-                    <option value="UTC">UTC</option>
-                    <option value="America/New_York">New York</option>
-                </select>
-            </div>
-           
+    <div class="stopwatch-container">
+        <div class="stopwatch" id="stopwatch">00:00:00</div>
+        <div class="controls">
+            <button onclick="startStopwatch()">Start</button>
+            <button onclick="stopStopwatch()">Stop</button>
+            <button onclick="resetStopwatch()">Reset</button>
+            <button onclick="recordLap()">Lap</button>
+            <select id="stopwatchStyle" onchange="changeStopwatchStyle()">
+                <option value="digital">Digital</option>
+                <option value="analog">Analog</option>
+            </select>
         </div>
+        <div class="lap-times" id="lapTimes"></div>
     </div>
     <script src="script.js"></script>
 </body>
