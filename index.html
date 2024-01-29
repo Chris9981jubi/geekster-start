@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Stopwatch</title>
+    <title>User Card Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stopwatch-container">
-        <div class="stopwatch" id="stopwatch">00:00:00</div>
-        <div class="controls">
-            <button onclick="startStopwatch()">Start</button>
-            <button onclick="stopStopwatch()">Stop</button>
-            <button onclick="resetStopwatch()">Reset</button>
-            <button onclick="recordLap()">Lap</button>
-            <select id="stopwatchStyle" onchange="changeStopwatchStyle()">
-                <option value="digital">Digital</option>
-                <option value="analog">Analog</option>
-            </select>
-        </div>
-        <div class="lap-times" id="lapTimes"></div>
-    </div>
-    <script src="script.js"></script>
+
+<div id="userCard">
+    <h2>User Card</h2>
+    <p id="userName"></p>
+    <p id="userPhone"></p>
+    <p id="userVillage"></p>
+    <p id="userCity"></p>
+</div>
+
+<form id="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required>
+
+    <label for="village">Village:</label>
+    <input type="text" id="village" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="script.js"></script>
 </body>
 </html>

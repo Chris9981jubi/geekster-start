@@ -1,28 +1,24 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #722e2e;
-}
-
-.stopwatch-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
     text-align: center;
-    justify-content: center;
 }
 
-.stopwatch {
-    font-size: 3rem;
-    margin-bottom: 20px;
+#userCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
 }
 
-.controls {
-    margin-top: 20px;
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.lap-times {
-    margin-top: 20px;
+input, button {
+    margin: 10px 0;
+    padding: 10px;
 }
-
