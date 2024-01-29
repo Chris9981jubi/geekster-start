@@ -1,7 +1,7 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #userCard {
@@ -9,6 +9,8 @@ body {
     padding: 20px;
     margin: 20px auto;
     max-width: 400px;
+    background-color: #fff;
+    color: #333;
 }
 
 form {
@@ -22,3 +24,8 @@ input, button {
     margin: 10px 0;
     padding: 10px;
 }
+
+#themeSelector {
+    margin: 20px auto;
+}
+
